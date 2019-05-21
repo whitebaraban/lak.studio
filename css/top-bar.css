@@ -1,0 +1,37 @@
+.top-bar {
+  background: pink;
+  width: 100%;
+  padding: 7px 0px;
+  font-size: 18px; }
+  .top-bar .top-bar-root {
+    max-width: 1280px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 5fr 100px 250px; }
+    .top-bar .top-bar-root .logo {
+      font-family: Alice;
+      font-size: 25px;
+      margin-top: 4px; }
+    .top-bar .top-bar-root .tel, .top-bar .top-bar-root .online-rec {
+      text-align: right;
+      letter-spacing: 1px; }
+    .top-bar .top-bar-root .tel {
+      margin-top: 3px;
+      font-size: 22px; }
+      .top-bar .top-bar-root .tel a {
+        display: block;
+        text-decoration: none;
+        color: #000; }
+    .top-bar .top-bar-root .online-rec button {
+      font-family: Alice;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: white;
+      background-color: rgba(0, 151, 35, 0.76);
+      border-radius: 12px;
+      font-size: 18px;
+      border: 1px solid lightgrey;
+      box-sizing: border-box;
+      padding: 7px 15px; }
+      .top-bar .top-bar-root .online-rec button:hover {
+        background: #CC0099; }

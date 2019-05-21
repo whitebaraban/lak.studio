@@ -1,0 +1,19 @@
+ul {
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  margin: 35px 0px 15px 0px; }
+  ul li {
+    padding-left: 45px;
+    box-sizing: border-box; }
+    ul li:first-child {
+      padding-left: 0px;
+      margin-top: -2px; }
+    ul li:hover {
+      text-decoration: underline; }
+    ul li a {
+      text-decoration: none;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 2px; }

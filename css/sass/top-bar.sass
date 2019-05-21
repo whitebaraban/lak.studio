@@ -1,0 +1,46 @@
+.top-bar
+  background: pink
+  width: 100%
+  padding: 7px 0px
+  font-size: 18px
+
+  .top-bar-root
+    max-width: 1280px
+    margin: 0px auto
+    display: grid
+    grid-template-columns: 5fr 100px 250px
+  
+    .logo
+      font-family: Alice
+      font-size: 25px
+      margin-top: 4px
+
+    .tel, .online-rec
+      text-align: right
+      letter-spacing: 1px
+
+    .tel
+      margin-top: 3px
+      font-size: 22px
+
+      a
+        display: block
+        text-decoration: none
+        color: #000
+
+    .online-rec
+      button
+        font-family: Alice
+        text-transform: uppercase
+        letter-spacing: 1px
+        color: white
+        background-color: rgba(0, 151, 35, .76)
+        border-radius: 12px
+        font-size: 18px
+        border: 1px solid lightgrey
+        box-sizing: border-box
+        padding: 7px 15px
+
+        &:hover
+          background: #CC0099
+        

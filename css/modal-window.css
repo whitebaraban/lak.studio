@@ -1,0 +1,13 @@
+.hidden-win {
+  display: none; }
+
+.modal-window {
+  width: 500px;
+  height: 500px;
+  border: 1px solid;
+  border-radius: 55px;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  padding: 50px;
+  box-sizing: border-box; }
