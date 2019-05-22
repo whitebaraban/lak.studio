@@ -1,13 +1,59 @@
-.hidden-win {
-  display: none; }
+.fixed-overlay {
+  text-align: center;
+  white-space: nowrap;
+  position: fixed;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  /* https://habr.com/ru/post/252769/ */
+  visibility: visible;
+  transition: 0.5s; }
+  .fixed-overlay:after {
+    display: inline-block;
+    vertical-align: middle;
+    width: 0;
+    height: 100%;
+    content: "";
+    /* https://habr.com/ru/post/252769/ */ }
+  .fixed-overlay .modal-window-container {
+    display: inline-block;
+    vertical-align: middle;
+    /* https://habr.com/ru/post/252769/ */ }
+    .fixed-overlay .modal-window-container .modal-window {
+      min-width: 200px;
+      text-align: left;
+      white-space: normal;
+      background-color: #fff;
+      color: #000;
+      /* https://habr.com/ru/post/252769/ */
+      width: 400px;
+      height: 500px;
+      border-radius: 25px;
+      text-align: center;
+      padding: 20px; }
+      .fixed-overlay .modal-window-container .modal-window .close {
+        text-decoration: none;
+        color: #fff; }
+        .fixed-overlay .modal-window-container .modal-window .close:after {
+          box-sizing: border-box;
+          display: block;
+          content: "X";
+          font-size: 25px;
+          position: relative;
+          top: -80px;
+          left: 420px;
+          width: 40px;
+          height: 40px;
+          border: 2px solid #fff;
+          border-radius: 30%; }
+        .fixed-overlay .modal-window-container .modal-window .close:hover:after {
+          color: lightgreen;
+          border: 2px solid lightgreen; }
 
-.modal-window {
-  width: 500px;
-  height: 500px;
-  border: 1px solid;
-  border-radius: 55px;
-  position: absolute;
-  left: 40%;
-  top: 20%;
-  padding: 50px;
-  box-sizing: border-box; }
+.hidden-win {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s; }
