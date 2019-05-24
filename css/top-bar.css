@@ -1,15 +1,16 @@
 .top-bar {
-  background: pink;
+  background: #e8324f;
   width: 100%;
   padding: 7px 0px;
-  font-size: 18px; }
+  font-size: 18px;
+  color: #fff;
+  font-family: Open_Light; }
   .top-bar .top-bar-root {
     max-width: 1280px;
     margin: 0px auto;
     display: grid;
     grid-template-columns: 5fr 100px 250px; }
     .top-bar .top-bar-root .logo {
-      font-family: Alice;
       font-size: 25px;
       margin-top: 4px; }
     .top-bar .top-bar-root .tel, .top-bar .top-bar-root .online-rec {
@@ -21,17 +22,19 @@
       .top-bar .top-bar-root .tel a {
         display: block;
         text-decoration: none;
-        color: #000; }
+        color: #fff; }
     .top-bar .top-bar-root .online-rec button {
-      font-family: Alice;
+      font-family: Open_Light;
+      font-weight: 100;
       text-transform: uppercase;
-      letter-spacing: 1px;
+      letter-spacing: 2px;
       color: white;
-      background-color: rgba(0, 151, 35, 0.76);
-      border-radius: 12px;
+      background-color: rgba(250, 222, 31, 0.76);
+      border-radius: 5px;
       font-size: 18px;
       border: 1px solid lightgrey;
       box-sizing: border-box;
       padding: 7px 15px; }
       .top-bar .top-bar-root .online-rec button:hover {
-        background: #CC0099; }
+        background: #CC0099;
+        /*00CC33 */ }

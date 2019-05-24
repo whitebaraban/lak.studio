@@ -24,43 +24,91 @@
     display: inline-block
     vertical-align: middle
     /* https://habr.com/ru/post/252769/ */
-
-    .modal-window     
-      min-width: 200px   
-      text-align: left  
-      white-space: normal  
-      background-color: #fff        
-      color: #000
+    
+    .modal-window          
+       
       /* https://habr.com/ru/post/252769/ */
-      width: 400px
-      height: 500px
-      border-radius: 25px
-      text-align: center
-      padding: 20px
+      width: 380px
+      background-color: #fff
+      text-align: left
+      padding-top: 0
+      padding-bottom: 25px
+      border-radius: 10px
+      box-shadow: 0 0 10px 0 rgba(#fff, 0.1)
+      
+      h2
+        text-align: center
+      
+      form
+        padding-left: 40px
+        
+        input, textarea
+          display: block
+          width: 300px
+          margin-bottom: 10px
 
+          &:focus
+            box-shadow: 0 2px 3px 0 rgba(#000, 0.2)
+        
+        input
+          height: 30px
+
+        input[type="date"]::-webkit-inner-spin-button
+          display: none
+
+
+        button
+          margin-top: 20px
+          margin-left: 70px
+          padding: 15px 15px
+
+          font-size: 18px
+          font-family: Open_Light
+          font-weight: 100
+          text-transform: uppercase
+          letter-spacing: 2px
+
+          color: white
+          background-color: #e8324f
+
+          border-radius: 5px
+          border: 1px solid lightgrey
+          box-sizing: border-box
+          
+
+          &:hover
+            box-shadow: 0 0 5px 5px rgba(#000, 0.2)
+            background: #00CC33
+
+      button:focus, input:focus, textarea:focus, .close:focus
+            outline: 1px solid #e8324f
 
       .close
         text-decoration: none
         color: #fff
+        font-size: 25px
+        font-family: Open_Light
+        position: relative
+        border: 1px solid #fff
+        border-radius: 50%
+        display: inline-block
+        width: 35px 
+        height: 35px
+        left: 400px
+        top: -50px 
+        text-align: center
 
-        &:after
-          box-sizing: border-box
-          display: block
-          content: "X"
-          font-size: 25px
-          position: relative
-          top: -80px
-          left: 420px
-          width: 40px
-          height: 40px
-          border: 2px solid #fff
-          border-radius: 30%
+        &:hover
+          box-shadow: 0 0 5px 1px rgba(#e8324f, 0.2)
+            
+      .modal-window-adress
+        font-family: Open_Light
+        font-size: 14px
+        text-align: center
+        color: #e8324f
 
-        &:hover:after
-          color: lightgreen
-          border: 2px solid lightgreen
+        display: block
 
 .hidden-win
   visibility: hidden
   opacity: 0
-  transition: 0.2s
