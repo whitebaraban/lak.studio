@@ -12,10 +12,11 @@
     grid-template-columns: 5fr 100px 250px; }
     .top-bar .top-bar-root .logo {
       font-size: 25px;
-      margin-top: 4px; }
+      padding: 4px 0 0 20px; }
     .top-bar .top-bar-root .tel, .top-bar .top-bar-root .online-rec {
       text-align: right;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      padding-right: 20px; }
     .top-bar .top-bar-root .tel {
       margin-top: 3px;
       font-size: 22px; }

@@ -8,5 +8,29 @@ body {
   padding: 0px; }
 
 .wrapper {
-  margin: 0 auto;
-  text-align: center; }
+  margin: 0 auto; }
+
+main section {
+  background: url(../img/bg.jpg) no-repeat;
+  background-size: 100%;
+  height: 900px; }
+  main section .content-block {
+    margin: 0 auto;
+    width: 1280px;
+    padding: 200px 0 0 20px;
+    box-sizing: border-box; }
+    main section .content-block span {
+      font-family: Open_Light;
+      display: block;
+      letter-spacing: 2px; }
+    main section .content-block .main-text {
+      font-size: 30px; }
+    main section .content-block .logo-text {
+      color: #e8324f;
+      font-weight: 800;
+      font-size: 44px;
+      margin-bottom: 10px; }
+    main section .content-block p a {
+      margin-left: 15px; }
+    main section .content-block p:first-child {
+      margin-left: 0px; }

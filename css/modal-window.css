@@ -30,7 +30,7 @@
       padding-top: 0;
       padding-bottom: 25px;
       border-radius: 10px;
-      box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.1); }
+      box-shadow: 0 0px 30px rgba(0, 128, 0, 0.5); }
       .fixed-overlay .modal-window-container .modal-window h2 {
         text-align: center; }
       .fixed-overlay .modal-window-container .modal-window form {
@@ -61,7 +61,7 @@
           box-sizing: border-box; }
           .fixed-overlay .modal-window-container .modal-window form button:hover {
             box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.2);
-            background: #00CC33; }
+            background: #008000; }
       .fixed-overlay .modal-window-container .modal-window button:focus, .fixed-overlay .modal-window-container .modal-window input:focus, .fixed-overlay .modal-window-container .modal-window textarea:focus, .fixed-overlay .modal-window-container .modal-window .close:focus {
         outline: 1px solid #e8324f; }
       .fixed-overlay .modal-window-container .modal-window .close {
