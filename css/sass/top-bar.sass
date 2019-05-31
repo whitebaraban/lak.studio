@@ -1,5 +1,5 @@
 .top-bar
-  background: #e8324f
+  background: rgb(106, 156, 154)
   width: 100%
   padding: 7px 0px
   font-size: 18px
@@ -11,11 +11,25 @@
     max-width: 1280px
     margin: 0px auto
     display: grid
-    grid-template-columns: 5fr 100px 250px
+    grid-template-columns: 5fr 250px 250px
   
-    .logo
-      font-size: 25px
-      padding: 4px 0 0 20px
+    .social
+      padding: 5px 0 0 20px
+      color: #e8324f
+        
+      a
+        margin-left: 5px
+
+        &:first-child
+          margin-left: 0px
+
+      img 
+        padding: 1px
+
+      img:hover
+        border-radius: 50%
+        background-color: rgba(206, 160, 138, 1)
+        transition: 0.2s
 
     .tel, .online-rec
       text-align: right
@@ -24,28 +38,46 @@
 
     .tel
       margin-top: 3px
-      font-size: 22px
+      font-size: 20px
+      position: relative
 
       a
-        display: block
         text-decoration: none
         color: #fff
+   
+        &:hover:before 
+          content: "+7 (911) "
+
+      .tel-text
+        position: absolute
+        right: 20px
+        bottom: 0px
+        font-size: 10px
 
     .online-rec
       button
         font-family: Open_Light
-        font-weight: 100
         text-transform: uppercase
         letter-spacing: 2px
         color: white
-        background-color: rgba(#fade1f, .76)
+        background-color: #ce7286
         border-radius: 5px
-        font-size: 18px
-        border: 1px solid lightgrey
+        font-size: 15px
+        border: 1px solid #ce7286
         box-sizing: border-box
         padding: 7px 15px
 
         &:hover
-          background: #CC0099
-          /*00CC33*/
+          color: #ce7286
+          background: #ffff
+          transition: 0.5s
+          /*00CC33* rgba(206, 160, 138, 1)*/
         
+
+@media screen and (max-width: 680px) 
+  .tel
+    display: none
+  nav
+    display: none
+  .top-bar-root
+    grid-template-columns: 1fr 1fr 1fr

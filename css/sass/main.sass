@@ -2,6 +2,7 @@
 @import top-navigation.css
 @import top-bar.css
 @import modal-window.css
+@import header.css
 
 body 
   font-family: Open
@@ -11,15 +12,20 @@ body
 .wrapper
   margin: 0 auto
 
-main
-  section
-    background: url(../img/bg.jpg) no-repeat
+main 
+  section 
+    height: 1000px
+    
+  .portfolio
+    width: 100%
+    background: url(../img/1234.jpg) no-repeat
     background-size: 100%
-    height: 900px
+    
+    margin-bottom: 200px
 
     .content-block
       margin: 0 auto
-      width: 1280px
+      max-width: 1280px
       padding: 200px 0 0 20px
       box-sizing: border-box
 
@@ -31,15 +37,6 @@ main
       .main-text
         font-size: 30px
 
-      .logo-text
-        color: #e8324f
-        font-weight: 800
-        font-size: 44px
-        margin-bottom: 10px
+      
 
-      p 
-        a 
-          margin-left: 15px
-
-        &:first-child
-          margin-left: 0px
+        

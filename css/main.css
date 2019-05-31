@@ -2,6 +2,7 @@
 @import url(top-navigation.css);
 @import url(top-bar.css);
 @import url(modal-window.css);
+@import url(header.css);
 body {
   font-family: Open;
   margin: 0px;
@@ -11,26 +12,20 @@ body {
   margin: 0 auto; }
 
 main section {
-  background: url(../img/bg.jpg) no-repeat;
+  height: 1000px; }
+main .portfolio {
+  width: 100%;
+  background: url(../img/1234.jpg) no-repeat;
   background-size: 100%;
-  height: 900px; }
-  main section .content-block {
+  margin-bottom: 200px; }
+  main .portfolio .content-block {
     margin: 0 auto;
-    width: 1280px;
+    max-width: 1280px;
     padding: 200px 0 0 20px;
     box-sizing: border-box; }
-    main section .content-block span {
+    main .portfolio .content-block span {
       font-family: Open_Light;
       display: block;
       letter-spacing: 2px; }
-    main section .content-block .main-text {
+    main .portfolio .content-block .main-text {
       font-size: 30px; }
-    main section .content-block .logo-text {
-      color: #e8324f;
-      font-weight: 800;
-      font-size: 44px;
-      margin-bottom: 10px; }
-    main section .content-block p a {
-      margin-left: 15px; }
-    main section .content-block p:first-child {
-      margin-left: 0px; }

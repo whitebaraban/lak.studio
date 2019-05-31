@@ -1,11 +1,5 @@
-header
-  height: 80px
-  box-shadow: 0 2px 3px rgba(#000, 0.4)
-  padding-top: 18px
-  box-sizing: border-box
-  position: relative
-
 ul
+  margin-top: 40px
   list-style: none
   box-sizing: border-box
   display: flex
@@ -18,15 +12,32 @@ ul
     
     &:first-child
       padding-left: 0px
-      margin-top: -2px   
 
-    &:hover
-      text-decoration: underline
     a
+      position: relative
       text-decoration: none
       color: black
       text-transform: uppercase
-      letter-spacing: 2px
+      letter-spacing: 3px
+      font-size: 21px
+      font-family: Open_Light
+
+      &:after
+        display: block
+        position: absolute
+        left: 0 
+        width: 0
+        height: 1px
+        background-color: #000
+        content: ""
+        transition: width 0.3s ease-out
+        /*https://toster.ru/q/458850 */
+
+      &:hover:after,
+      &:focus:after 
+        width: 100%
+        /*https://toster.ru/q/458850 */
+      
 
             
 
